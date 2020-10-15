@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#ABABAB"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f8f8f8"
+        android:orientation="vertical">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:weightSum="2"
+                android:background="@drawable/cardback"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#FFFFFF"
+                    android:text="  LEARNR with RNR"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#FFFFFF"
+                    android:text=" The app thats lets you learn new things in a better way"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="2"
+                android:layout_marginTop="120dp"
+              android:background="@drawable/whynextxml"
+                android:orientation="vertical">
+        <androidx.viewpager.widget.ViewPager
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+
+            android:layout_height="wrap_content" />
+            </LinearLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
